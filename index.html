@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ES">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Calculadora de costos de boletos de avión</title>
+  </head>
+  <body>
+    <section class="form-register">
+        <h4>Calcular Costos de Vuelos</h4>
+        <div class="Conntrols" id="origin">
+          <div class="details Ciudad Origen">
+            <div>
+                <h4>Origen</h4>
+              <select class="controls" id="select-origin" required>
+                  <option value="" disabled selected>Seleccione Origen</option>
+                  <option value="El Salvador">El Salvador</option>
+                  <option value="Londres">Londres</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Los Angeles">Los Angeles</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="controls" id="destination">
+          <div class="details Ciudad Destino">
+            <div>
+                <h4>Destino</h4>
+              <select class="controls" id="select-destination" required>
+                  <option value="" disabled selected>Seleccione Destino</option>
+                  <option value="El Salvador">El Salvador</option>
+                  <option value="Londres">Londres</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Los Angeles">Los Angeles</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="controls" id="departure-date">
+            <label for="date">Fecha de Salida</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="controls" id="departure-time">
+          <label for="hora">Hora de salida:</label>
+          <input type="time" id="hora" name="hora" required>
+        </div>
+        <button class="botons" id="calcular">
+            <span class="botons" Type="Texto">Calcular Costo</span>
+        </button>
+        <div id="resultado"></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
+
